@@ -1,0 +1,8 @@
+# Parkietentool
+
+This project, built using Laravel 10, primarily focuses on backend development with less emphasis on frontend design. It was undertaken as part of a school assignment, where we received a project brief outlining the website's requirements and functionality. This encompassed everything from designing the database model to implementing the backend features. The purpose of the website is to allow members to purchase rings for their parakeets. In addition, it also had to have a backend for the admin.
+
+The admin has full CRUD over the rings, members and orders. The admin can also filter and sort orders, and export the filtered orders to Excel.
+
+A member can order rings via the order form on the website. Here their profile details are automatically filled in. They can choose how many rings of each type to order and the price will be calculated and displayed below with Javascript. They can then choose how they want to pay. If they choose to pay online, they will be redirected to Mollie's payment page. Once the order has been placed, the codes of their ordered rings are automatically calculated. The code is composed of the club name, the id of the
+member, the size of the ring, the country, the current year and the umptheent number of that ring. But the rings are made out of two materials with the same size, so if they order rings in both materials, the umptheent number of the second material should continue counting, otherwise you have rings with the exactly same number.
